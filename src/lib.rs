@@ -18,7 +18,7 @@ fn colourise(text: &str, colour: i8) -> String {
 /// 
 pub fn colour(text: &str, colour: &str) -> String {
     match colour {
-        ///normal colours
+        //normal colours
         "black" | "b" => return colourise(text, 30),
         "red" | "r" => return colourise(text, 31),
         "green" | "g" => return colourise(text, 32),
@@ -28,7 +28,7 @@ pub fn colour(text: &str, colour: &str) -> String {
         "cyan" | "c" => return colourise(text, 36),
         "white"| "w" => return colourise(text, 37),
         
-        /// bright colours
+        // bright colours
         "brightblack" | "bb" => return colourise(text, 90),
         "brightred" | "br" => return colourise(text, 91),
         "brightgreen" | "bg" => return colourise(text, 92),
@@ -38,7 +38,7 @@ pub fn colour(text: &str, colour: &str) -> String {
         "brightcyan" | "bc" => return colourise(text, 96),
         "brightwhite" | "bw" => return colourise(text, 97),
         
-        ///background colours
+        //background colours
         "backgroundred" | "b-r" => return colourise(text, 41),
         "backgroundgreen" | "b-g" => return colourise(text, 42),
         "backgroundyellow" | "b-y" => return colourise(text, 43),

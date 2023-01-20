@@ -1,5 +1,5 @@
 # coloured-strings
-Rust crate that allows coloured strings to be printed to the terminal.
+Rust crate that provides a function to print coloured strings to be printed to the terminal.
 ```rust
   coloured("this is a green string", "green");
   coloured("this is a red string", "r");

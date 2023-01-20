@@ -6,3 +6,4 @@ Rust crate that allows coloured strings to be printed to the terminal.
   coloured("this string has a white background", "backgroundwhite"
   colorued(&coloured("this string has white text and a blue background", w")[..], "b-bl"));
 ```
+## How to Use

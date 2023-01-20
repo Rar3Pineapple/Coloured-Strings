@@ -58,7 +58,7 @@ pub fn colour(text: &str, colour: &str) -> String {
         "backgroundbrightwhite" | "b-bw" => return colourise(text, 107),
 
 
-        /// edge case
+        // edge case
         _ => return colourise("no colour selected!", 93)
 
 

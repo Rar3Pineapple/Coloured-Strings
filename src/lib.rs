@@ -12,8 +12,61 @@ fn colourise(text: &str, colour: i8) -> String {
 /// ___ 
 ///
 /// Examples
-/// ```
+/// ```rust
 /// coloured("this is a black string", "black");
+/// coloured("this is a underlined string", "u");
+/// ```
+/// ___
+/// Available Colours
+/// ```rust 
+///    // normal colours
+///     "black" | "b"
+///     "red" | "r"
+///     "green" | "g"
+///     "yellow" | "y"
+///     "blue" | "bl"
+///     "magenta" | "m"
+///     "cyan" | "c"
+///     "white"| "w"
+///     
+///     // bright colours
+///     "brightblack" | "bb" 
+///     "brightred" | "br"   
+///     "brightgreen" | "bg"   
+///     "brightyellow" | "by"  
+///     "brightblue" | "bbl" 
+///     "brightmagenta" | "bm"  
+///     "brightcyan" | "bc"  
+///     "brightwhite" | "bw"  
+///     
+///     //background colours
+///     "backgroundred" | "b-r"   
+///     "backgroundgreen" | "b-g"  
+///     "backgroundyellow" | "b-y"  
+///     "backgroundblue" | "b-b"  
+///     "backgroundmagenta" | "b-m"  
+///     "backgroundcyan" | "b-c"  
+///     "bacgroundwhite" | "b-w" 
+///        
+///     //bright background colours
+///     "backgroundbrightblack" | "b-bb" 
+///     "backgroundbrightred" | "b-br" 
+///     "backgroundbrightgreen" | "b-bg" 
+///     "backgroundbrightyellow" | "b-by"  
+///     "backgroundbrightblue" | "b-bbl"  
+///     "backgroundbrightmagenta" | "b-bm"  
+///     "backgroundbrightcyan" | "b-bc"  
+///     "backgroundbrightwhite" | "b-bw"  
+///
+///    // other styles
+///     "clear" | "cl"  
+///     "dimmed" | "d"   
+///     "italic" | "i"   3
+///     "underline" | "u"  
+///     "blink" | "bli"   5
+///     "reversed" | "re"   
+///     "hidden" | "h"  
+///     "strikethrough" | "s"  
 /// ```
 /// 
 pub fn colour(text: &str, colour: &str) -> String {
@@ -57,7 +110,15 @@ pub fn colour(text: &str, colour: &str) -> String {
         "backgroundbrightcyan" | "b-bc" => return colourise(text, 106),
         "backgroundbrightwhite" | "b-bw" => return colourise(text, 107),
 
-
+        // other styles
+        "clear" | "cl" => return colourise(text, 1),
+        "dimmed" | "d"  => return colourise(text, 2),
+        "italic" | "i" => return colourise(text, 3),
+        "underline" | "u" => return colourise(text, 4),
+        "blink" | "bli" => return colourise(text, 5),
+        "reversed" | "re"  => return colourise(text, 7),
+        "hidden" | "h" => return colourise(text, 8),
+        "strikethrough" | "s" => return colourise(text, 9),
         // edge case
         _ => return colourise("no colour selected!", 93)
 

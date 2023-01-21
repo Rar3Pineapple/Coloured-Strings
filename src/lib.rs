@@ -13,8 +13,8 @@ fn colourise(text: &str, colour: i8) -> String {
 ///
 /// Examples
 /// ```rust
-/// coloured("this is a black string", "black");
-/// coloured("this is a underlined string", "u");
+/// colour("this is a black string", "black");
+/// colour("this is a underlined string", "u");
 /// ```
 /// ___
 /// Available Colours

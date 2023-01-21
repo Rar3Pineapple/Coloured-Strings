@@ -6,7 +6,9 @@ license = "MIT"
 description = "Crate that makes colouring strings easy."
 repository = "https://github.com/Rar3Pineapple/Coloured-Strings"
 readme = "README.md"
-keywords = ["graphics", "string"]
+keywords = ["graphics", "string", "colour", "color"]
+documentation = "https://docs.rs/coloured-strings/0.1.0/coloured_strings/"
+homepage = "https://github.com/Rar3Pineapple/Coloured-Strings"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

@@ -61,9 +61,9 @@ fn colourise(text: &str, colour: i8) -> String {
 ///    // other styles
 ///     "clear" | "cl"  
 ///     "dimmed" | "d"   
-///     "italic" | "i"   3
+///     "italic" | "i"   
 ///     "underline" | "u"  
-///     "blink" | "bli"   5
+///     "blink" | "bli"   
 ///     "reversed" | "re"   
 ///     "hidden" | "h"  
 ///     "strikethrough" | "s"  

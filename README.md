@@ -3,9 +3,20 @@ Rust crate that provides a function to print coloured strings to be printed to t
 ```rust
   coloured("this is a green string", "green");
   coloured("this is a red string", "r");
-  coloured("this string has a white background", "backgroundwhite"
+  coloured("this is a string with a strikethrough", "s")
   colorued(&coloured("this string has white text and a blue background", w")[..], "b-bl"));
 ```
+## How to Use
+Include "coloured_strings" in your project (I recommend you use "*")
+```rust
+use coloured_strings::*;
+
+fn main() {
+    println!("{}", coloured("I love coloured text!", "brightgreen");
+}
+```
+
+
 ## Current Colours
  ```rust
     // normal colours
@@ -50,9 +61,9 @@ Rust crate that provides a function to print coloured strings to be printed to t
     // other styles
      "clear" | "cl"
      "dimmed" | "d"
-     "italic" | "i"   3
+     "italic" | "i"  
      "underline" | "u"
-     "blink" | "bli"   5
+     "blink" | "bli"  
      "reversed" | "re"
      "hidden" | "h"
      "strikethrough" | "s"

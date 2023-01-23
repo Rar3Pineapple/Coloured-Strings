@@ -1,5 +1,5 @@
 # coloured-strings
-![title](src/banner.png)
+[![banner](https://i.postimg.cc/vTTkDL5Y/Screenshot-2023-01-22-at-20-54-16.png)](https://postimg.cc/LgdNbPyw)
 Rust crate that allows coloured strings to be printed to the terminal with the smallest file size neccessary.
 ```rust
   colour("this is a green string", "green");

@@ -1,10 +1,11 @@
 # coloured-strings
-Rust crate that provides a function to print coloured strings to be printed to the terminal.
+![title](src/banner.png)
+Rust crate that allows coloured strings to be printed to the terminal with the smallest file size neccessary.
 ```rust
   colour("this is a green string", "green");
   colour("this is a red string", "r");
   colour("this is a string with a strikethrough", "s")
-  color(&coloured("this string has white text and a blue background", w")[..], "b-bl"));
+  color(&colour("this string has white text and a blue background", w")[..], "b-bl"));
 ```
 ## How to Use
 Include "coloured_strings" in your project (I recommend you use "*")

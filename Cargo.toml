@@ -1,9 +1,9 @@
 [package]
 name = "coloured-strings"
-version = "0.1.5"
+version = "0.1.6"
 edition = "2021"
 license = "MIT"
-description = "Crate that makes colouring strings easy."
+description = "Crate that makes colouring strings easy and lightweight (< 3.0 kb)! "
 repository = "https://github.com/Rar3Pineapple/Coloured-Strings"
 readme = "README.md"
 keywords = ["graphics", "string", "colour", "color"]

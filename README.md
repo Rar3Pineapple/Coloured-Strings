@@ -8,7 +8,10 @@ Rust crate that allows coloured strings to be printed to the terminal with the s
   color(&colour("this string has white text and a blue background", w")[..], "b-bl"));
 ```
 ## How to Use
-Include "coloured_strings" in your project (I recommend you use "*")
+Run ``` cargo add coloured-strings```
+Afterwards, write this in your file ```use coloured_strings```
+
+Example:
 ```rust
 use coloured_strings::*;
 

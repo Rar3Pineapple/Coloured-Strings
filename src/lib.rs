@@ -126,4 +126,26 @@ pub fn colour(text: &str, colour: &str) -> String {
     }
 }
 
+/// This function takes a &str, which acts as the text; a boolean value to determine if the colour should be applied to the foreground or background; and red, blue and green values to determine colour.
+///
+/// ---
+/// Examples
+///
+/// ```rust
+/// custom_colour("foreground", true, 200, 240, 100);
+/// custom_colour("background", false, 200, 100, 200);
+/// ```
+///
+/// ---
+pub fn custom_colour(text: &str, foreground: bool, red: u8, green: u8, blue: u8) -> String {
+    // turn red, blue and green into strs to prepare for formatting
+    let r = red.to_string(); let g = green.to_string(); let b = blue.to_string();
+    // match statement to determine if foreground or background is being called
+    match foreground {
+        // foreground
+        true => return "\x1b[".to_owned() + &format!("38;2;{};{};{}", r, g, b).to_string() + "m" + text + "\x1b[0m",
+        // background
+        false => return "\x1b[".to_owned() + &format!("48;2;{};{};{}", r, g, b).to_string() + "m" + text + "\x1b[0m",
 
+    }
+}

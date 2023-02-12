@@ -1,6 +1,7 @@
 # coloured-strings
 [![banner](https://i.postimg.cc/vTTkDL5Y/Screenshot-2023-01-22-at-20-54-16.png)](https://postimg.cc/LgdNbPyw)
 Rust crate that allows coloured strings to be printed to the terminal with the smallest file size neccessary.
+
 NOTE: This version supports true colour in exchange for a slightly larger file size. If rgb colour is not neccessary, please download the previous verion instead.
 ```rust
   colourise("this is a green string", "green");

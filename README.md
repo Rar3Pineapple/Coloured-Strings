@@ -4,10 +4,10 @@ Rust crate that allows coloured strings to be printed to the terminal with the s
 
 NOTE: This version supports true colour in exchange for a slightly larger file size. If rgb colour is not neccessary, please download the previous verion instead.
 ```rust
-  colourise("this is a green string", "green");
-  colourise("this is a red string", "r");
-  colourise("this is a string with a strikethrough", "s");
-  colourise(&colourise("this string has white text and a blue background", w")[..], "b-bl"));
+  colour("this is a green string", "green");
+  colour("this is a red string", "r");
+  colour("this is a string with a strikethrough", "s");
+  colour(&colour("this string has white text and a blue background", w")[..], "b-bl"));
   custom_colour("A custom string!", true, 255, 100, 200);
 ```
 ## How to Use
